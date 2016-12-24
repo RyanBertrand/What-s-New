@@ -132,6 +132,9 @@
 - (IBAction)didTapContinueButton:(id)sender
 {
 	[self dismissViewControllerAnimated:YES completion:nil];
+	if(self.didDismissCompletionHandler){
+            self.didDismissCompletionHandler();
+        }
 }
 
 
