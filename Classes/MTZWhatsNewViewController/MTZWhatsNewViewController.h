@@ -67,6 +67,13 @@ typedef NS_ENUM(NSUInteger, MTZWhatsNewViewControllerStyle) {
 @property (nonatomic, copy) NSString *dismissButtonTitle;
 
 
+#pragma mark - Callbacks
+
+//Block to call when the controller is dismissed
+@property (nonatomic, copy) void (^didDismissCompletionHandler)(void);
+
+
+
 #pragma mark - Responding to Style Change
 
 ///	Notifies the view controller that the effective style has been changed.
