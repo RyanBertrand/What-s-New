@@ -61,7 +61,7 @@
 	 );
  }
  */
-@interface MTZWhatsNewGridViewController : MTZWhatsNewViewController
+@interface MTZWhatsNewGridViewController : MTZWhatsNewViewController<UICollectionViewDataSource>
 
 ///	Whether or not the icons should be treated as templates.
 /// @discussion The default is @c YES.
